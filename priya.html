@@ -1,0 +1,53 @@
+<h1><center>RESUME</center></h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="resume">
+        <h1>PRIYADHARSHINI</h1>
+        <p>Web Developer</p>
+        
+        <h2>Contact Information</h2>
+        <p>Email: priyadharshini63842@gmail.com</p>
+        <p>Phone: 91-6374176285</p>
+
+        <h2>Summary</h2>
+        <p>I'm a web developer with a passion for creating responsive and user-friendly websites. I have experience in HTML, CSS, and JavaScript.</p>
+
+        <h2>Education</h2>
+        <p>Bachelor's Degree in Computer Applications</p>
+        <p>Bharathiyar University</p>
+        <p>Graduated: 2024</p>
+
+        <h2>Experience</h2>
+        <p>Web Developer Intern</p>
+        <p>ABC Company</p>
+        <p>June 2019 - August 2020</p>
+ // Resume data
+const resumeData = {
+  name: "PRIYADHARSHINI",
+  title: "Web Developer",
+  email: "priyadharshini63842@gmail.com",
+  phone: "91-6374176285",
+  education: {
+    degree: "Bachelor of Science in Computer Applications",
+    university: "Bharthiyar University",
+    graduationYear: "May 2024"
+  },
+  experience: {
+    position: "Front-End Developer",
+    company: "ABC Company",
+    employmentPeriod: "July 2023 - Present",
+    responsibilities: [
+      "Developed responsive web applications using HTML, CSS, and JavaScript.",
+      "Collaborated with the design team to implement user interfaces."
+    ]
+  },
+  skills: ["HTML, CSS, JavaScript", "Responsive Web Design", "Version Control (Git)"]
+};
+
+// Populate HTML elements with resume data
+document.querySelector("h1").textContent = resumeData.name;
+document.querySelector("p")
